@@ -25,7 +25,7 @@ app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
 
 app.use(cors({
-    origin: 'http://vizag.tk', 'http://www.vizag.tk'
+    origin: 'http://vizag.tk', 
 }));
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
