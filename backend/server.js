@@ -1,6 +1,5 @@
 import path from "path";
 import express from "express";
-import cors from 'cors';
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 
@@ -23,10 +22,6 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
-
-app.use(cors({
-    origin: ['http://vizag.tk', 'http://www.vizag.tk', 'www.weebly.com', 'weebly.com'],
-}));
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
