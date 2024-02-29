@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: ["http://vizag.tk", "http://www.vizag.tk"],
+		origin: ["http://vizag.tk", "http://www.vizag.tk", "http://www.weebly.com", "http://weebly.com", "https://www.weebly.com", "https://weebly.com"],
 		methods: ["GET", "POST"],
 	},
 });
