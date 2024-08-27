@@ -13,7 +13,7 @@ const io = new Server(server, {
 	iframe: {
 		origin: ["https://vizag.tk", "http://www.vizag.tk", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
 		methods: ["GET", "POST"],
-	}
+	},
 });
 
 export const getReceiverSocketId = (receiverId) => {
