@@ -7,11 +7,11 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: ["https://vizag.tk", "http://www.vizag.tk", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
+		origin: ["https://vizag.tk", "https://www.vizag.tk", "http://www.vizag.tk", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
 		methods: ["GET", "POST"],
 	},
 	iframe: {
-		origin: ["https://vizag.tk", "http://www.vizag.tk", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
+		origin: ["https://vizag.tk", "https://www.vizag.tk", "http://www.vizag.tk", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
 		methods: ["GET", "POST"],
 	},
 });
