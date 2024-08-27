@@ -10,6 +10,10 @@ const io = new Server(server, {
 		origin: ["http://vizag.tk", "http://www.vizag.tk", "http://www.weebly.com", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
 		methods: ["GET", "POST"],
 	},
+	iframe: {
+		origin: ["http://vizag.tk", "http://www.vizag.tk", "http://www.weebly.com", "http://weebly.com", "https://www.weebly.com", "https://weebly.com", "https://chat-kx20.onrender.com/","*"],
+		methods: ["GET", "POST"],
+	}
 });
 
 export const getReceiverSocketId = (receiverId) => {
